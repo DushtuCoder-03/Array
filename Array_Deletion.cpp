@@ -3,9 +3,7 @@ using namespace std;
 int main() 
 {
     const int max = 100;
-    int arr[max];
-    int n;
-    int loc;
+    int arr[max], n, loc;
     cout << "Enter the number of elements: ";
     cin >> n;
     cout << "Enter " << n << " elements:" << endl;
@@ -26,9 +24,6 @@ int main()
             arr[i] = arr[i + 1];
         }
         n--;
-
-        cout << "Element at position " << loc << " deleted successfully.\n";
-
         cout << "Updated array:\n";
         for (int i = 0; i < n; ++i) 
         {
@@ -36,6 +31,5 @@ int main()
         }
         cout << endl;
     }
-
     return 0;
 }
